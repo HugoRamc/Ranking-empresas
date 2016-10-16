@@ -1,0 +1,322 @@
+{
+	"Empresas": [{
+			"nombre": "General Motors",
+			"antecedentes": {
+				"descripcion": "General motors es una empreza automotriz de talla mundial caracterizada por  el compromiso que tiene con sus clientes.Fue constituda el 1 de enero de 1897 ",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "353",
+					"activosNoCirculantes": [{
+						"activosFijos": "11016",
+						"activosDiferidos": "3250"
+					}],
+					"inventario": "4267",
+					"cuentasXCobrar": "471"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "5109",
+					"pasivosLargoPlazo": "7663",
+					"capitalContable": "2764"
+				},
+				"estadoDeResultados": {
+					"ventas": "152356",
+					"costoVentas": "147459",
+					"utilidadAntesDeImpuestos": "7718",
+					"utilidadNeta": "9615",
+					"impuesto": "0.24"
+				}
+			}
+		},
+
+		{
+			"nombre": "BMW",
+			"antecedentes": {
+				"descripcion": "BMW (Bayerische Motoren Werke) es un fabricante alemán de automoviles de gama alta y motocicletas con cd en munich",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "6071",
+					"activosNoCirculantes": [{
+						"activosFijos": "10626",
+						"activosDiferidos": "1075"
+					}],
+					"inventario": "4267",
+					"cuentasXCobrar": "367"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "5109",
+					"pasivosLargoPlazo": "7663",
+					"capitalContable": "2764"
+				},
+				"estadoDeResultados": {
+					"ventas": "72384",
+					"costoVentas": "57764",
+					"utilidadAntesDeImpuestos": "4572",
+					"utilidadNeta": "2741",
+					"impuesto": "0.39"
+				}
+			}
+		},
+
+		{
+			"nombre": "Honda",
+			"antecedentes": {
+				"descripcion": "Honda Motor Co. Ltd es una empresa de origen japonés que fabrica automóviles, propulsores para vehículos terrestres, acuáticos y aéreos, motocicletas, robots y en general componentes para la industia automotriz",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "60448",
+					"activosNoCirculantes": [{
+						"activosFijos": "76129",
+						"activosDiferidos": "40316"
+					}],
+					"inventario": "14384",
+					"cuentasXCobrar": "7878"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "50890",
+					"pasivosLargoPlazo": "55123",
+					"capitalContable": "1643"
+				},
+				"estadoDeResultados": {
+					"ventas": "127949",
+					"costoVentas": "99175",
+					"utilidadAntesDeImpuestos": "7740",
+					"utilidadNeta": "5386",
+					"impuesto": "0.30"
+				}
+			}
+		},
+
+		{
+			"nombre": "Tesla Motors",
+			"antecedentes": {
+				"descripcion": "Tesla Motors, Inc. es una compañía estadounidense ubicada en Silicon Valley, California, que diseña, fabrica y vende coches eléctricos, componentes para la propulsión de vehículos eléctricos y sistemas de almacenamiento a baterías. Tesla Motors es una compañía cotizada en bolsa bajo el acrónimo TSLA en el índice NASDAQ.",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "2791",
+					"activosNoCirculantes": [{
+						"activosFijos": "5226",
+						"activosDiferidos": "75"
+					}],
+					"inventario": "1278",
+					"cuentasXCobrar": "168"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "2816",
+					"pasivosLargoPlazo": "4145",
+					"capitalContable": "420"
+				},
+				"estadoDeResultados": {
+					"ventas": "4046",
+					"costoVentas": "3122",
+					"utilidadAntesDeImpuestos": "-876",
+					"utilidadNeta": "-889",
+					"impuesto": "0.02"
+				}
+			}
+		},
+
+		{
+			"nombre": "Volkswagen",
+			"antecedentes": {
+				"descripcion": "Volkswagen es un fabricante de automóviles alemán con sede en Wolfsburgo, Baja Sajonia (Alemania). Volkswagen es la marca original y más vendida del Grupo Volkswagen, el mayor fabricante de automóviles alemán y el segundo mayor fabricante de automóviles del mundo.",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "155073",
+					"activosNoCirculantes": [{
+						"activosFijos": "130323",
+						"activosDiferidos": "96575"
+					}],
+					"inventario": "35048",
+					"cuentasXCobrar": "110073"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "148489",
+					"pasivosLargoPlazo": "145175",
+					"capitalContable": "15834"
+				},
+				"estadoDeResultados": {
+					"ventas": "213292",
+					"costoVentas": "179382",
+					"utilidadAntesDeImpuestos": "-1301",
+					"utilidadNeta": "-1361",
+					"impuesto": "0.04"
+				}
+			}
+		},
+
+		{
+			"nombre": "Peugeot",
+			"antecedentes": {
+				"descripcion": "Peugeot es una marca de automóviles con más de 200 años de historia, especializada en la fabricación de turismos, vehículos comerciales, competición del motor, scooters, servicios de movilidad como alquiler de vehículos, y bicicletas.",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "23536",
+					"activosNoCirculantes": [{
+						"activosFijos": "12609",
+						"activosDiferidos": "3620"
+					}],
+					"inventario": "3996",
+					"cuentasXCobrar": "3340"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "20104",
+					"pasivosLargoPlazo": "9984",
+					"capitalContable": "808"
+				},
+				"estadoDeResultados": {
+					"ventas": "54426",
+					"costoVentas": "44372",
+					"utilidadAntesDeImpuestos": "1328",
+					"utilidadNeta": "955",
+					"impuesto": "0.28"
+				}
+			}
+		},
+
+		{
+			"nombre": "Nissan",
+			"antecedentes": {
+				"descripcion": "Nissan Motor Company, Limited es un fabricante japonés de automóviles, con base en Yokohama. Nippon Sangyo  (en japonés significaindustria japonesa ). Está entre las principales compañías automotrices en términos de producción anual de vehículos.",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "99046",
+					"activosNoCirculantes": [{
+						"activosFijos": "50556",
+						"activosDiferidos": "12937"
+					}],
+					"inventario": "3500",
+					"cuentasXCobrar": "69136"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "61608",
+					"pasivosLargoPlazo": "51657",
+					"capitalContable": "13539"
+				},
+				"estadoDeResultados": {
+					"ventas": "109202",
+					"costoVentas": "88717",
+					"utilidadAntesDeImpuestos": "6599",
+					"utilidadNeta": "4393",
+					"impuesto": "0.33"
+				}
+			}
+		},
+
+		{
+			"nombre": "Toyota",
+			"antecedentes": {
+				"descripcion": "Toyota Motor Corporation, simplemente llamado Toyota, es un fabricante de automóviles japonés con sede en Toyota (Aichi), Japón.Es una de las tres grandes  empresas automovilísticas japonesas desafiando a los fabricantes de automóviles estadounidenses que también incluye Nissan Motors y Honda Motor con gran éxito. Produce automóviles, camiones, autobuses y robots (no para la venta al público); es la quinta empresa más grande del mundo",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "172199",
+					"activosNoCirculantes": [{
+						"activosFijos": "115511",
+						"activosDiferidos": "73288"
+					}],
+					"inventario": "20521",
+					"cuentasXCobrar": "152574"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "157742",
+					"pasivosLargoPlazo": "131050",
+					"capitalContable": "9063"
+				},
+				"estadoDeResultados": {
+					"ventas": "261451",
+					"costoVentas": "235046",
+					"utilidadAntesDeImpuestos": "27771",
+					"utilidadNeta": "20864",
+					"impuesto": "0.25"
+				}
+			}
+		},
+
+		{
+			"nombre": "Ford",
+			"antecedentes": {
+				"descripcion": "The Ford Motor Company, más conocida simplemente como Ford, es una empresa multinacional estadounidense fabricante de automóviles, Camiones y Microbuses con base en Dearborn (Míchigan, Estados Unidos). Fue fundada en el 16 de junio de 1903 por Henry Ford en Detroit (Míchigan). Según la revista Fortune, DaimlerChrysler y Toyota Motor superaron a Ford, situándose respectivamente como el segundo y tercer grupo de fabricantes de automóviles mundial con más ingresos en 2004",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "137151",
+					"activosNoCirculantes": [{
+						"activosFijos": "30163",
+						"activosDiferidos": "57611"
+					}],
+					"inventario": "8319",
+					"cuentasXCobrar": "101975"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "62278",
+					"pasivosLargoPlazo": "120556",
+					"capitalContable": "21421"
+				},
+				"estadoDeResultados": {
+					"ventas": "140566",
+					"costoVentas": "124041",
+					"utilidadAntesDeImpuestos": "10252",
+					"utilidadNeta": "7371",
+					"impuesto": "0.28"
+				}
+			}
+		},
+
+		{
+			"nombre": "Ferrari",
+			"antecedentes": {
+				"descripcion": "Ferrari es una compañía de automóviles deportivos con sede en Maranello (Italia). Fue fundada en 1929 por un piloto de autos de competición, Enzo Ferrari, con el nombre de Scuderia Ferrari, construyendo automóviles de competición y, más tarde, en 1947, fabricando autos deportivos.",
+				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
+				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
+			},
+			"cuentas": {
+				"activos": {
+					"activosCirculantes": "2019",
+					"activosNoCirculantes": [{
+						"activosFijos": "1721",
+						"activosDiferidos": "134"
+					}],
+					"inventario": "295",
+					"cuentasXCobrar": "1394"
+				},
+				"pasivos": {
+					"pasivosCirculantes": "2269",
+					"pasivosLargoPlazo": "655",
+					"capitalContable": "804"
+				},
+				"estadoDeResultados": {
+					"ventas": "2854",
+					"costoVentas": "1499",
+					"utilidadAntesDeImpuestos": "434",
+					"utilidadNeta": "290",
+					"impuesto": "0.33"
+				}
+			}
+		}
+	]
+}
