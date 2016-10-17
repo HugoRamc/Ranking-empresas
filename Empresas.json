@@ -1,5 +1,7 @@
 {
-	"Empresas": [{
+	"Empresas": [
+			{
+			"idEmpresa":"1",
 			"nombre": "General Motors",
 			"antecedentes": {
 				"descripcion": "General motors es una empreza automotriz de talla mundial caracterizada por  el compromiso que tiene con sus clientes.Fue constituda el 1 de enero de 1897 ",
@@ -32,9 +34,10 @@
 		},
 
 		{
+			"idEmpresa":"2",
 			"nombre": "BMW",
 			"antecedentes": {
-				"descripcion": "BMW (Bayerische Motoren Werke) es un fabricante alemán de automoviles de gama alta y motocicletas con cd en munich",
+				"descripcion": "BMW (Bayerische Motoren Werke) es un fabricante alemï¿½n de automoviles de gama alta y motocicletas con cd en munich",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
@@ -64,9 +67,10 @@
 		},
 
 		{
+			"idEmpresa":"3",
 			"nombre": "Honda",
 			"antecedentes": {
-				"descripcion": "Honda Motor Co. Ltd es una empresa de origen japonés que fabrica automóviles, propulsores para vehículos terrestres, acuáticos y aéreos, motocicletas, robots y en general componentes para la industia automotriz",
+				"descripcion": "Honda Motor Co. Ltd es una empresa de origen japonï¿½s que fabrica automï¿½viles, propulsores para vehï¿½culos terrestres, acuï¿½ticos y aï¿½reos, motocicletas, robots y en general componentes para la industia automotriz",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
@@ -96,9 +100,10 @@
 		},
 
 		{
+			"id":"4",
 			"nombre": "Tesla Motors",
 			"antecedentes": {
-				"descripcion": "Tesla Motors, Inc. es una compañía estadounidense ubicada en Silicon Valley, California, que diseña, fabrica y vende coches eléctricos, componentes para la propulsión de vehículos eléctricos y sistemas de almacenamiento a baterías. Tesla Motors es una compañía cotizada en bolsa bajo el acrónimo TSLA en el índice NASDAQ.",
+				"descripcion": "Tesla Motors, Inc. es una compaï¿½ï¿½a estadounidense ubicada en Silicon Valley, California, que diseï¿½a, fabrica y vende coches elï¿½ctricos, componentes para la propulsiï¿½n de vehï¿½culos elï¿½ctricos y sistemas de almacenamiento a baterï¿½as. Tesla Motors es una compaï¿½ï¿½a cotizada en bolsa bajo el acrï¿½nimo TSLA en el ï¿½ndice NASDAQ.",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
@@ -128,9 +133,10 @@
 		},
 
 		{
+			"id":"5",
 			"nombre": "Volkswagen",
 			"antecedentes": {
-				"descripcion": "Volkswagen es un fabricante de automóviles alemán con sede en Wolfsburgo, Baja Sajonia (Alemania). Volkswagen es la marca original y más vendida del Grupo Volkswagen, el mayor fabricante de automóviles alemán y el segundo mayor fabricante de automóviles del mundo.",
+				"descripcion": "Volkswagen es un fabricante de automï¿½viles alemï¿½n con sede en Wolfsburgo, Baja Sajonia (Alemania). Volkswagen es la marca original y mï¿½s vendida del Grupo Volkswagen, el mayor fabricante de automï¿½viles alemï¿½n y el segundo mayor fabricante de automï¿½viles del mundo.",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
@@ -160,9 +166,10 @@
 		},
 
 		{
+			"id":"6",
 			"nombre": "Peugeot",
 			"antecedentes": {
-				"descripcion": "Peugeot es una marca de automóviles con más de 200 años de historia, especializada en la fabricación de turismos, vehículos comerciales, competición del motor, scooters, servicios de movilidad como alquiler de vehículos, y bicicletas.",
+				"descripcion": "Peugeot es una marca de automï¿½viles con mï¿½s de 200 aï¿½os de historia, especializada en la fabricaciï¿½n de turismos, vehï¿½culos comerciales, competiciï¿½n del motor, scooters, servicios de movilidad como alquiler de vehï¿½culos, y bicicletas.",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
@@ -192,9 +199,10 @@
 		},
 
 		{
+			"id":"7",
 			"nombre": "Nissan",
 			"antecedentes": {
-				"descripcion": "Nissan Motor Company, Limited es un fabricante japonés de automóviles, con base en Yokohama. Nippon Sangyo  (en japonés significaindustria japonesa ). Está entre las principales compañías automotrices en términos de producción anual de vehículos.",
+				"descripcion": "Nissan Motor Company, Limited es un fabricante japonï¿½s de automï¿½viles, con base en Yokohama. Nippon Sangyo  (en japonï¿½s significaindustria japonesa ). Estï¿½ entre las principales compaï¿½ï¿½as automotrices en tï¿½rminos de producciï¿½n anual de vehï¿½culos.",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
@@ -224,9 +232,10 @@
 		},
 
 		{
+			"id":"8",
 			"nombre": "Toyota",
 			"antecedentes": {
-				"descripcion": "Toyota Motor Corporation, simplemente llamado Toyota, es un fabricante de automóviles japonés con sede en Toyota (Aichi), Japón.Es una de las tres grandes  empresas automovilísticas japonesas desafiando a los fabricantes de automóviles estadounidenses que también incluye Nissan Motors y Honda Motor con gran éxito. Produce automóviles, camiones, autobuses y robots (no para la venta al público); es la quinta empresa más grande del mundo",
+				"descripcion": "Toyota Motor Corporation, simplemente llamado Toyota, es un fabricante de automï¿½viles japonï¿½s con sede en Toyota (Aichi), Japï¿½n.Es una de las tres grandes  empresas automovilï¿½sticas japonesas desafiando a los fabricantes de automï¿½viles estadounidenses que tambiï¿½n incluye Nissan Motors y Honda Motor con gran ï¿½xito. Produce automï¿½viles, camiones, autobuses y robots (no para la venta al pï¿½blico); es la quinta empresa mï¿½s grande del mundo",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
@@ -256,9 +265,10 @@
 		},
 
 		{
+			"id":"9",
 			"nombre": "Ford",
 			"antecedentes": {
-				"descripcion": "The Ford Motor Company, más conocida simplemente como Ford, es una empresa multinacional estadounidense fabricante de automóviles, Camiones y Microbuses con base en Dearborn (Míchigan, Estados Unidos). Fue fundada en el 16 de junio de 1903 por Henry Ford en Detroit (Míchigan). Según la revista Fortune, DaimlerChrysler y Toyota Motor superaron a Ford, situándose respectivamente como el segundo y tercer grupo de fabricantes de automóviles mundial con más ingresos en 2004",
+				"descripcion": "The Ford Motor Company, mï¿½s conocida simplemente como Ford, es una empresa multinacional estadounidense fabricante de automï¿½viles, Camiones y Microbuses con base en Dearborn (Mï¿½chigan, Estados Unidos). Fue fundada en el 16 de junio de 1903 por Henry Ford en Detroit (Mï¿½chigan). Segï¿½n la revista Fortune, DaimlerChrysler y Toyota Motor superaron a Ford, situï¿½ndose respectivamente como el segundo y tercer grupo de fabricantes de automï¿½viles mundial con mï¿½s ingresos en 2004",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
@@ -288,9 +298,10 @@
 		},
 
 		{
+			"id":"10",
 			"nombre": "Ferrari",
 			"antecedentes": {
-				"descripcion": "Ferrari es una compañía de automóviles deportivos con sede en Maranello (Italia). Fue fundada en 1929 por un piloto de autos de competición, Enzo Ferrari, con el nombre de Scuderia Ferrari, construyendo automóviles de competición y, más tarde, en 1947, fabricando autos deportivos.",
+				"descripcion": "Ferrari es una compaï¿½ï¿½a de automï¿½viles deportivos con sede en Maranello (Italia). Fue fundada en 1929 por un piloto de autos de competiciï¿½n, Enzo Ferrari, con el nombre de Scuderia Ferrari, construyendo automï¿½viles de competiciï¿½n y, mï¿½s tarde, en 1947, fabricando autos deportivos.",
 				"estadosFinancieros": "REVISAR QUE FORMATO SE VA APONER",
 				"resumenEjecutivo": "REVISAR EL DE LA PAG DEL PROF"
 			},
