@@ -1,0 +1,125 @@
+<div *ngIf="company">
+	<h1>{{ company.nombre }}</h1>
+	<h2>Datos de la compañia </h2>
+		<p>{{ company.antecedentes.descripcion }}</p>
+	<h3>Cuentas: </h3>
+	<h4>Activos</h4>
+		<ul>
+			<li>
+				<a href="activo-circulante">Activos Circulantes</a>
+				<span>{{ company.cuentas.activos.activosCirculantes }}</span>
+			</li>
+			<li>
+				<p>Activos No Circulantes</p>
+				<ol>
+					<li>
+						<p>Activos Fijos</p>
+						<span>{{ company.cuentas.activos.activosNoCirculantes.activosFijos }}</span>
+					</li>
+					<li>
+						<p>Activos Diferidos</p>
+						<span>{{ company.cuentas.activos.activosNoCirculantes.activosDiferidos }}</span>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<p>Inventario</p>
+				<span>{{ company.cuentas.activos.inventario }}</span>
+			</li>
+			<li>
+				<p>Cuentas por Cobrar</p>
+				<span>{{ company.cuentas.activos.cuentasXCobrar }}</span>
+			</li>
+		</ul>
+	<h4>Pasivos</h4>
+		<ul>
+			<li>
+				<p>Pasivos Circulantes</p>
+				<span>{{ company.cuentas.pasivos.pasivosCirculantes }}</span>
+			</li>
+			<li>
+				<p>Pasivos a Largo Plazo</p>
+				<span>{{ company.cuentas.pasivos.pasivosLargoPlazo }}</span>
+			</li>
+			<li>
+				<p>Capital Contable</p>
+				<span>{{ company.cuentas.pasivos.capitalContable }}</span>
+			</li>
+		</ul>
+	<h4>Estado de Resultados</h4>
+		<ul>
+			<li>
+				<p>Ventas</p>
+				<span>{{ company.cuentas.estadoDeResultados.ventas }}</span>
+			</li>
+			<li>
+				<p>Costo de Ventas</p>
+				<span>{{ company.cuentas.estadoDeResultados.costoVentas }}</span>
+			</li>
+			<li>
+				<p>Utilidad Antes de Impuestos</p>
+				<span>{{ company.cuentas.estadoDeResultados.utilidadAntesDeImpuestos }}</span>
+			</li>
+			<li>
+				<p>Utilidad Neta</p>
+				<span>{{ company.cuentas.estadoDeResultados.utilidadNeta }}</span>
+			</li>
+			<li>
+				<p>Impuesto</p>
+				<span>{{ company.cuentas.estadoDeResultados.impuesto }}</span>
+			</li>
+		</ul>
+	<h2>Información Empresarial</h2>
+	<h3>Rentabilidad</h3>
+		<ul>
+			<li>
+				<p>Rendimiento Capital</p>
+				<span> {{ company.cuentas.estadoDeResultados.utilidadNeta / company.cuentas.pasivos.capitalContable }}</span>
+			</li>
+			<li>
+				<p>Rendimiento de Activos</p>
+				<span> {{ company.cuentas.estadoDeResultados.utilidadNeta *(1 - company.cuentas.estadoDeResultados.impuesto ) / ( company.cuentas.activos.activosCirculantes + company.cuentas.activos.activosNoCirculantes.activosFijos + company.cuentas.activos.activosNoCirculantes.activosDiferidos) }}</span>
+			</li>
+			<li>
+				<p>Margen de Utilidad</p>
+				<span> {{ company.cuentas.estadoDeResultados.utilidadNeta / company.cuentas.estadoDeResultados.ventas }}</span>
+			</li>
+			<li>
+				<p>Multiplicador Capital</p>
+				<span> {{ ( company.cuentas.activos.activosCirculantes + company.cuentas.activos.activosNoCirculantes.activosFijos + company.cuentas.activos.activosNoCirculantes.activosDiferidos) / company.cuentas.pasivos.capitalContable }}</span>
+			</li>
+		</ul>
+	<h3>Deuda</h3>
+		<ul>
+			<li>
+				<p>Razón de deuda total</p>
+				<span> {{ ( company.cuentas.pasivos.pasivosCirculantes + company.cuentas.pasivos.pasivosLargoPlazo + company.cuentas.pasivos.capitalContable ) / ( company.cuentas.activos.activosCirculantes + company.cuentas.activos.activosNoCirculantes.activosFijos + company.cuentas.activos.activosNoCirculantes.activosDiferidos) }}</span>
+			</li>
+			<li>
+				<p>Razón de deuda total</p>
+				<span> {{ ( company.cuentas.pasivos.pasivosCirculantes + company.cuentas.pasivos.pasivosLargoPlazo + company.cuentas.pasivos.capitalContable ) / company.cuentas.pasivos.capitalContable }}</span>
+			</li>
+		</ul>
+	<h3>Rotación</h3>
+		<ul>
+			<li>
+				<p>Periodo de Cobranza</p>
+				<span> {{ ( company.cuentas.activos.cuentasXCobrar*360 ) / company.cuentas.estadoDeResultados.ventas }}</span>
+			</li>
+			<li>
+				<p>Rotación de Inventarios</p>
+				<span> {{ company.cuentas.estadoDeResultados.ventas / company.cuentas.activos.inventario }}</span>
+			</li>
+		</ul>
+	<h3>Liquidéz</h3>
+		<ul>
+			<li>
+				<p>Razón Circulante</p>
+				<span> {{ company.cuentas.activos.activosCirculantes / company.cuentas.pasivos.pasivosCirculantes }}</span>
+			</li>
+			<li>
+				<p>Prueba de Acidéz</p>
+				<span> {{ company.cuentas.activos.activosCirculantes - company.cuentas.pasivos.pasivosCirculantes }}</span>
+			</li>
+		</ul>
+</div>

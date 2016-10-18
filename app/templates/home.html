@@ -1,0 +1,7 @@
+<h3>Mis Compañias: </h3>
+<ul>
+	<li *ngFor="let company of companies; let i = index; trackBy: trackByFn">
+		<a [routerLink]="['/compañia', company.id]">{{ company.nombre }}</a>
+		<p>{{ company.antecedentes.descripcion }}</p>
+	</li>	
+</ul>

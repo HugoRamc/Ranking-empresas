@@ -1,0 +1,8 @@
+<h1>Activo Circulante</h1>
+<ul>
+	<li *ngFor="let company of companies; let i = index; trackBy: trackByFn">
+		<a id='nombre-{{ company.id }}'[routerLink]="['/compañia', company.id]">{{ company.nombre }}</a>
+		<p id='activo-{{ company.id }}' >{{ company.cuentas.activos.activosCirculantes }}</p>
+	</li>
+	<div id="chart_div"></div>
+</ul>
