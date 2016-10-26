@@ -40,4 +40,18 @@
       }
     }
   });
+  var map = {
+    'vaadin-charts': 'bower_components/vaadin-charts/directives'
+  };
+
+  var packages = {
+    'vaadin-charts': { main: 'vaadin-charts.js', defaultExtension: 'js' }
+  };
+
+  var config = {
+    map: map,
+    packages: packages
+  };
+
+System.config(config);
 })(this);

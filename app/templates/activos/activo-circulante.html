@@ -1,8 +1,17 @@
-<h1>Activo Circulante</h1>
-<ul>
-	<li *ngFor="let company of companies; let i = index; trackBy: trackByFn">
-		<a id='nombre-{{ company.id }}'[routerLink]="['/compañia', company.id]">{{ company.nombre }}</a>
-		<p id='activo-{{ company.id }}' >{{ company.cuentas.activos.activosCirculantes }}</p>
-	</li>
-	<div id="chart_div"></div>
-</ul>
+<section class='cuenta-section'>
+	<h1>Activo Circulante</h1>
+	<ul class='col-md-6 col-xs-12'>
+		<li *ngFor="let company of companies; let i = index; trackBy: trackByFn">
+			<a id='nombre-{{ company.id }}'[routerLink]="['/compañia', company.id]">{{ company.nombre }}</a>
+			<div>
+				<span>$</span><p id='activo-{{ company.id }}'>{{ company.cuentas.activos.activosCirculantes }}</p>
+			</div>
+		</li>
+		<div id="chart_div"></div>
+	</ul>
+	<div class='mayor-data col-md-6 col-xs-12'>
+		<p>La empresa con mayor activo circulante es: <strong id='nombreMayor'></strong></p>
+		<p>Ya que contabiliza <strong id='cuentaMayor'></strong> en activos circulantes</p>
+		<img id='mayorImage' src="" alt="">
+	</div>
+</section>

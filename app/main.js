@@ -20,6 +20,10 @@ var app_component_1 = require('./app.component');
 var home_component_1 = require('./components/home/home.component');
 var company_element_component_1 = require('./components/company_element/company_element.component');
 var activo_circulante_component_1 = require('./components/activo_circulante/activo_circulante.component');
+var activo_fijo_component_1 = require('./components/activo_fijo/activo_fijo.component');
+var activo_diferido_component_1 = require('./components/activo_diferido/activo_diferido.component');
+var inventario_component_1 = require('./components/inventario/inventario.component');
+var cuentas_xCobrar_component_1 = require('./components/cuentas_xCobrar/cuentas_xCobrar.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -31,7 +35,11 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
                 company_element_component_1.CompanyElement,
-                activo_circulante_component_1.ActivoCirculante
+                activo_circulante_component_1.ActivoCirculante,
+                activo_fijo_component_1.ActivoFijo,
+                activo_diferido_component_1.ActivoDiferido,
+                inventario_component_1.Inventario,
+                cuentas_xCobrar_component_1.CuentasxCobrar
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

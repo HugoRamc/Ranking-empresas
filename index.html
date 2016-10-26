@@ -13,11 +13,14 @@
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="https://code.angularjs.org/2.0.0-alpha.46/http.dev.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+
+    <!-- Vendors -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
-
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
@@ -25,7 +28,5 @@
   <!-- 3. Display the application -->
   <body>
     <my-app>Cargando Información...</my-app>
-    
-    
   </body>
 </html>

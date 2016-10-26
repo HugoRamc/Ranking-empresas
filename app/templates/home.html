@@ -1,7 +1,16 @@
-<h3>Mis Compañias: </h3>
-<ul>
-	<li *ngFor="let company of companies; let i = index; trackBy: trackByFn">
-		<a [routerLink]="['/compañia', company.id]">{{ company.nombre }}</a>
-		<p>{{ company.antecedentes.descripcion }}</p>
-	</li>	
-</ul>
+<section class='home-section'>
+	<h1>Ranking de empresas más rentables en el sector automovilístico </h1>
+	<div class='home-cuestionario'>
+		<p class='pregunta'>¿Qué es el análisis financiero?</p>
+		<span class='respuesta'>Respuesta</span>
+
+	</div>
+	<h3>Compañias estudiadas: </h3>
+	<ul class='company-list'>
+		<li *ngFor="let company of companies; let i = index; trackBy: trackByFn" class='col-lg-4'>
+			<a [routerLink]="['/compañia', company.id]">{{ company.nombre }}</a>
+			<p>{{ company.antecedentes.descripcion }}</p>
+			<img src="src/img/{{company.nombre}}.png" alt="">
+		</li>	
+	</ul>
+</section>

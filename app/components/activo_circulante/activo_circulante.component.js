@@ -15,46 +15,49 @@ var ActivoCirculante = (function () {
         this._companyService = _companyService;
     }
     ActivoCirculante.prototype.ngOnInit = function () {
+        var _this = this;
         this.getCompanies();
-        google.charts.load('current', { 'packages': ['corechart'] });
-        google.charts.setOnLoadCallback(this.drawChart);
+        setTimeout(function () {
+            _this.getDomData();
+        }, 200);
     };
-    ActivoCirculante.prototype.ngAfterContentInit = function () {
+    ActivoCirculante.prototype.getDomData = function () {
+        var name_1 = document.getElementById('nombre-1').innerText, name_2 = document.getElementById('nombre-2').innerText, name_3 = document.getElementById('nombre-3').innerText, name_4 = document.getElementById('nombre-4').innerText, name_5 = document.getElementById('nombre-5').innerText, name_6 = document.getElementById('nombre-6').innerText, name_7 = document.getElementById('nombre-7').innerText, name_8 = document.getElementById('nombre-8').innerText, name_9 = document.getElementById('nombre-9').innerText, name_10 = document.getElementById('nombre-10').innerText;
+        var activo_1 = parseInt(document.getElementById('activo-1').innerText), activo_2 = parseInt(document.getElementById('activo-2').innerText), activo_3 = parseInt(document.getElementById('activo-3').innerText), activo_4 = parseInt(document.getElementById('activo-4').innerText), activo_5 = parseInt(document.getElementById('activo-5').innerText), activo_6 = parseInt(document.getElementById('activo-6').innerText), activo_7 = parseInt(document.getElementById('activo-7').innerText), activo_8 = parseInt(document.getElementById('activo-8').innerText), activo_9 = parseInt(document.getElementById('activo-9').innerText), activo_10 = parseInt(document.getElementById('activo-10').innerText);
+        var activos = [
+            activo_1,
+            activo_2,
+            activo_3,
+            activo_4,
+            activo_5,
+            activo_6,
+            activo_7,
+            activo_8,
+            activo_9,
+            activo_10
+        ];
+        var mayor = activos[0];
+        var id = 0;
+        for (var i = 0; i <= 9; i++) {
+            if (activos[i] >= mayor) {
+                mayor = activos[i];
+                id = i;
+            }
+        }
+        var mayor_name = document.getElementById('nombre-' + id).innerText;
+        document.getElementById("mayorImage").setAttribute("src", "src/img/" + mayor_name + ".png");
+        document.getElementById("cuentaMayor").innerHTML = "$" + mayor;
+        document.getElementById("nombreMayor").innerHTML = mayor_name;
     };
     ActivoCirculante.prototype.getCompanies = function () {
         var _this = this;
         this._companyService.getCompanies()
             .subscribe(function (companies) { return _this.companies = companies; }, function (error) { return _this.errorString = error; });
     };
-    ActivoCirculante.prototype.drawChart = function () {
-        var name_0 = $('#nombre-0').text(), name_1 = $('#nombre-1').text(), name_2 = $('#nombre-2').text(), name_3 = $('#nombre-3').text(), name_4 = $('#nombre-4').text(), name_5 = $('#nombre-5').text(), name_6 = $('#nombre-6').text(), name_7 = $('#nombre-7').text(), name_8 = $('#nombre-8').text(), name_9 = $('#nombre-9').text();
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-            [name_0, parseInt($('#activo-0').text())],
-            [name_1, parseInt($('#activo-1').text())],
-            [name_2, parseInt($('#activo-2').text())],
-            [name_3, parseInt($('#activo-3').text())],
-            [name_4, parseInt($('#activo-4').text())],
-            [name_5, parseInt($('#activo-5').text())],
-            [name_6, parseInt($('#activo-6').text())],
-            [name_7, parseInt($('#activo-7').text())],
-            [name_8, parseInt($('#activo-8').text())],
-            [name_9, parseInt($('#activo-9').text())]
-        ]);
-        // Set chart options
-        var options = { 'title': '',
-            'width': 800,
-            'height': 600 };
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-    };
     ActivoCirculante = __decorate([
         core_1.Component({
             templateUrl: './app/templates/activos/activo-circulante.html',
-            providers: [get_company_service_1.CompanyService],
+            providers: [get_company_service_1.CompanyService]
         }), 
         __metadata('design:paramtypes', [get_company_service_1.CompanyService])
     ], ActivoCirculante);
