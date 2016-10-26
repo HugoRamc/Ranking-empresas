@@ -1,0 +1,47 @@
+<table class='table table-striped'>
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Rotación (1 pt max)</th>
+			<th>Rentabilidad (3.5 pts max)</th>
+			<th>Liquidez (2 pts max)</th>
+			<th>Endeudamiento (3.5 pts max)</th>
+			<th>Total (10 pts max)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let company of companies; let i = index; trackBy: trackByFn">
+			<td>{{ company.nombre }}</td>
+			<td>
+				{{ (10*(company.cuentas.estadoDeResultados.ventas / company.cuentas.activos.inventario)/35.70564799625029)*.1 }}
+			</td>
+			<td>
+				{{ (10*(company.cuentas.estadoDeResultados.utilidadNeta / company.cuentas.pasivos.capitalContable)/3.478654124457308)*.35 }}
+			</td>
+			<td>
+				{{ (10*(company.cuentas.activos.activosCirculantes - company.cuentas.pasivos.pasivosCirculantes)/74873)*.20 }}
+			</td>
+			<td>
+
+				{{ (10*((company.cuentas.pasivos.pasivosCirculantes + company.cuentas.pasivos.pasivosLargoPlazo + company.cuentas.pasivos.capitalContable ) / ( company.cuentas.activos.activosCirculantes + company.cuentas.activos.activosNoCirculantes.activosFijos + company.cuentas.activos.activosNoCirculantes.activosDiferidos)*100)/106.27265886859568)*.35 }}
+			</td>
+			<td>
+				{{
+					(10*(company.cuentas.estadoDeResultados.ventas / company.cuentas.activos.inventario)/35.70564799625029)*.1
+					+
+					(10*(company.cuentas.estadoDeResultados.utilidadNeta / company.cuentas.pasivos.capitalContable)/3.478654124457308)*.35
+					+
+					(10*(company.cuentas.activos.activosCirculantes - company.cuentas.pasivos.pasivosCirculantes)/74873)*.20
+					+
+					(10*((company.cuentas.pasivos.pasivosCirculantes + company.cuentas.pasivos.pasivosLargoPlazo + company.cuentas.pasivos.capitalContable ) / ( company.cuentas.activos.activosCirculantes + company.cuentas.activos.activosNoCirculantes.activosFijos + company.cuentas.activos.activosNoCirculantes.activosDiferidos)*100)/106.27265886859568)*.35
+
+				}}
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div>
+		<h3><strong>General Motors</strong> tiene el puntaje mas alto, por lo tanto sería la empresa mas viable a invertir.</h3>
+		<img src="src/img/General Motors.png">
+	</div>

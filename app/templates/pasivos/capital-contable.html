@@ -1,0 +1,17 @@
+<section class='cuenta-section'>
+	<h1>Capital Contable</h1>
+	<ul class='col-md-6 col-xs-12'>
+		<li *ngFor="let company of companies; let i = index; trackBy: trackByFn">
+			<a id='nombre-{{ company.id }}'[routerLink]="['/compañia', company.id]">{{ company.nombre }}</a>
+			<div>
+				<span>$</span><p id='pasivo-{{ company.id }}'>{{ company.cuentas.pasivos.capitalContable }}</p>
+			</div>
+		</li>
+		<div id="chart_div"></div>
+	</ul>
+	<div class='mayor-data col-md-6 col-xs-12'>
+		<p>La empresa con mayor capital contable es: <strong id='nombreMayor'></strong></p>
+		<p>Ya que contabiliza <strong id='cuentaMayor'></strong> en capital contable</p>
+		<img id='mayorImage' src="" alt="">
+	</div>
+</section>

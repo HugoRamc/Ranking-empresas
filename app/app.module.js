@@ -23,6 +23,15 @@ var activo_fijo_component_1 = require('./components/activo_fijo/activo_fijo.comp
 var activo_diferido_component_1 = require('./components/activo_diferido/activo_diferido.component');
 var inventario_component_1 = require('./components/inventario/inventario.component');
 var cuentas_xCobrar_component_1 = require('./components/cuentas_xCobrar/cuentas_xCobrar.component');
+var pasivo_circulante_component_1 = require('./components/pasivo_circulante/pasivo_circulante.component');
+var pasivo_largoPlazo_component_1 = require('./components/pasivo_largoPlazo/pasivo_largoPlazo.component');
+var capital_contable_component_1 = require('./components/capital_contable/capital_contable.component');
+var ventas_component_1 = require('./components/ventas/ventas.component');
+var costo_ventas_component_1 = require('./components/costo_ventas/costo_ventas.component');
+var utilidad_impuestos_component_1 = require('./components/utilidad_impuestos/utilidad_impuestos.component');
+var utilidad_neta_component_1 = require('./components/utilidad_neta/utilidad_neta.component');
+var impuesto_component_1 = require('./components/impuesto/impuesto.component');
+var ranking_component_1 = require('./components/ranking/ranking.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -41,7 +50,16 @@ var AppModule = (function () {
                 activo_fijo_component_1.ActivoFijo,
                 activo_diferido_component_1.ActivoDiferido,
                 inventario_component_1.Inventario,
-                cuentas_xCobrar_component_1.CuentasxCobrar
+                cuentas_xCobrar_component_1.CuentasxCobrar,
+                pasivo_circulante_component_1.PasivoCirculante,
+                pasivo_largoPlazo_component_1.PasivoLargoPlazo,
+                capital_contable_component_1.CapitalContable,
+                ventas_component_1.Ventas,
+                costo_ventas_component_1.CostoVentas,
+                utilidad_impuestos_component_1.UtilidadImpuestos,
+                utilidad_neta_component_1.UtilidadNeta,
+                impuesto_component_1.Impuesto,
+                ranking_component_1.Ranking
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 
