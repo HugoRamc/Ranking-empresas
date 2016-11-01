@@ -7,7 +7,7 @@
     <title></title>
     <script src="funciones.js" type="text/javascript"></script>
 </head>
-<body onload="saludar()">
+<body>
     <form id="form1" runat="server">
     <div>
         <asp:Panel runat="server" ID="pnlEmpresas" Visible ="true">
@@ -23,22 +23,31 @@
                     </asp:TemplateField>
                 </Columns>
             </asp:GridView>
+            
+
         </asp:Panel>
     
         <asp:Panel ID="pnlDatosEmpresa" runat="server" Visible="false">
             Selecciona el punto de equilibrio que deseas calcular<br />
-            <asp:Label ID="lblempresa" runat="server" Text=""></asp:Label><br />
+            <asp:Label ID="lblempresa" runat="server" Text=""></asp:Label><br /><br />
+
             <asp:Button ID="btnEqNormal" runat="server" Text="Punto de Equilibro Normal" OnClick="btnEqNormal_Click"/><br />
-            <asp:Button ID="btnEqEfectivo" runat="server" Text="Punto de Equilibro en Efectivo" /><br />
-            <asp:Button ID="btnMezclado" runat="server" Text="Punto de Equilibrio Mezaclado" /><br />
 
+            <asp:Button ID="btnEqEfectivo" runat="server" Text="Punto de Equilibro en Efectivo" OnClick="btnEqEfectivo_Click"/><br />
+
+            <asp:Button ID="btnMezclado" runat="server" Text="Punto de Equilibrio Mezaclado" OnClick="btnMezclado_Click" /><br />
+
+            <br />
             <div>
-                <asp:Button ID="Button1" runat="server" Text="Punto de Equilibrio Mezaclado" /><br />
+                Punto de Equilibrio con utilidad<br />
+                <asp:Button ID="btnEqNormalU" runat="server" Text="Punto de Equilibrio con utilidad deseada" OnClick="btnEqNormalU_Click"/><br />
+                <asp:Button ID="btnMeszcladoU" runat="server" Text="Punto de Equilibrio Mezaclado con utilidad deseada" OnClick="btnMeszcladoU_Click"/><br />
             </div>
-
+            <br /><br />
+            <asp:Button ID="btnRegresar" runat="server" Text="Regresar" OnClick="btnRegresar_Click" />
             
         </asp:Panel>
-
+        
     </div>
     </form>
 </body>

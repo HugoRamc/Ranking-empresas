@@ -11,7 +11,17 @@ public partial class index : System.Web.UI.Page
     cBD cbase = new cBD();
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        if(!IsPostBack)
+        {
+            try
+            {
+                Response.Write("<script>alert('" + Session["mensaje"].ToString() + "');</script>");
+            }
+            catch (Exception)
+            { }
+            Session.Clear();
+            
+        }
         DataTable dt;
 
         dt = cbase.consulta("spDatosEmpresa");
@@ -27,21 +37,61 @@ public partial class index : System.Web.UI.Page
 
     protected void gdListaEmpresa_RowCommand(object sender, GridViewCommandEventArgs e)
     {
+        
+        Session.Clear();
         valor = e.CommandArgument.ToString();
         comando = e.CommandName;
 
 
         if (comando == "verEmpresa")
         {
-            //pnlEmpresas.Visible = false;
+            pnlEmpresas.Visible = false;
             pnlDatosEmpresa.Visible = true;
             lblempresa.Text = "Escogiste la empresa: "+valor;
+            Session.Add("empresa",valor);
+
         }
 
     }
 
     protected void btnEqNormal_Click(object sender, EventArgs e)
     {
-        lblempresa.Text = "Hola, me apretaste :D";
+        //calcular funcion del punto de equilibrio normal
+        pnlDatosEmpresa.Visible = true;
+
+        lblempresa.Text = Session["empresa"].ToString();
+        Response.Redirect("normal.aspx");
+
     }
+
+    protected void btnEqEfectivo_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("efectivo.aspx");
+    }
+
+    protected void btnMezclado_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btnEqNormalU_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btnMeszcladoU_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btnRegresar_Click(object sender, EventArgs e)
+    {
+        pnlEmpresas.Visible = true;
+        pnlDatosEmpresa.Visible = false;
+        Session.Clear();
+
+        //lbl1.Text = ("<script>alert('Data inserted successfully')</script>");
+
+    }
+
 }

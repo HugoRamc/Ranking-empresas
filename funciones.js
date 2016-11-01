@@ -1,4 +1,5 @@
 ﻿function saludar()
 {
-    alert("Mira estoy saludando");
+    alert("Mira me apretaste desde la parte del cliente");
+    
 }
