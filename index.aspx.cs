@@ -71,17 +71,17 @@ public partial class index : System.Web.UI.Page
 
     protected void btnMezclado_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("Mezclado.aspx");
     }
 
     protected void btnEqNormalU_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("utilidadNormal.aspx");
     }
 
     protected void btnMeszcladoU_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("utilidadMezclado.aspx");
     }
 
     protected void btnRegresar_Click(object sender, EventArgs e)

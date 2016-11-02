@@ -60,7 +60,7 @@ public partial class normal : System.Web.UI.Page
         lblPECantidad.Text = "la cantidad necesaria que se neceista para el punto de equilibrio es: \n" + PEC;
 
         lblPEDinero.Text = "Punto de Equilibrio Dinero" + PED;
-        lblanotaciones.Text = "Precio de venta unitario: " + precioVenta + "\n\n\t Costo variable unitario: " + costoVariable;
+        lblanotaciones.Text = "Precio de venta unitario: " + precioVenta + "<br/> Costo variable unitario: " + costoVariable;
 
         lblUnidadesVendidas.Text = (PEC).ToString();
         lblIngresoxVenta.Text = (PEC * precioVenta).ToString();
