@@ -6,10 +6,23 @@
 <head runat="server">
     <title></title>
     <script src="funciones.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"/> 
 </head>
 <body>
+   
+      <nav>
+        <!-- Listado de Navegación -->
+        <ul class="menu">  
+            <li><a href="Inicio.aspx">Inicio</a></li>  
+   
+            <li><a href="index.aspx">Empresas registradas</a></li>
+            <!--<li><a href="index.aspx">Registrar Empresas</a></li>-->
+        </ul>    
+     </nav><br /><br />
+
+    <p>Se tienen las siguientes empresas registradas, seleccione una con la cual quiera trabajar su punto de equilibrio </p>
     <form id="form1" runat="server">
-    <div>
+    <div class="tabla">
         <asp:Panel runat="server" ID="pnlEmpresas" Visible ="true">
             <asp:GridView ID="gdListaEmpresa" runat="server" AutoGenerateColumns="False" OnRowCommand="gdListaEmpresa_RowCommand">
                 <Columns>

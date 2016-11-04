@@ -5,8 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
+    <script src="funciones.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen"/> 
 </head>
 <body>
+     <nav>
+        <!-- Listado de Navegación -->
+        <ul class="menu">  
+            <li><a href="Inicio.aspx">Inicio</a></li>  
+   
+            <li><a href="index.aspx">Empresas registradas</a></li>
+            <!--<li><a href="index.aspx">Registrar Empresas</a></li>-->
+        </ul>    
+     </nav><br /><br />
     <form id="form1" runat="server">
         <div>
             <asp:GridView ID="gdProductos" runat="server" AutoGenerateColumns="False">
